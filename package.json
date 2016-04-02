@@ -1,0 +1,33 @@
+{
+  "naml": "t2fsrc",
+  "version": "0.0.1",
+  "description": "Transform a string whose value is a template literal and returns a string with the source of a function which receives the variable used in the template and returns the value of the string interpolation",
+  "main": "src",
+  "scripts": {
+    "lint": "eslint --cache src test",
+    "test": "mocha -R spec test",
+    "test-cov": "nyc node_modules/mocha/bin/_mocha && nyc report --reporter=lcov"
+  },
+  "author": "Ivan Fraixedes <ivan@faixed.es> (http://ivan.fraixed.es)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ifraixedes/jst2fsrc.git"
+  },
+  "keywords": [
+    "template-literals",
+    "source-generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/ifraixedes/jst2fsrc/issues"
+  },
+  "homepage": "https://github.com/ifraixedes/jst2fsrc#readme",
+  "dependencies": {
+    "esprima": "^2.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^2.6.0",
+    "mocha": "^2.4.5",
+    "nyc": "^6.1.1"
+  }
+}
