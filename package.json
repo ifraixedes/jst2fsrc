@@ -1,5 +1,5 @@
 {
-  "naml": "t2fsrc",
+  "name": "t2fsrc",
   "version": "0.0.1",
   "description": "Transform a string whose value is a template literal and returns a string with the source of a function which receives the variable used in the template and returns the value of the string interpolation",
   "main": "src",
